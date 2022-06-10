@@ -4,15 +4,25 @@
         <meta charset="utf-8">
         <title> How to create a GitHub HTML page. </title>
     </head>
+    <style>
+        body{ color: lightgrey;}
+        h1 {color: black;
+            text-align: center;}
+        h2 {color: black; text-align: center;}
+        p{color: black;}
+        img{  display: block;
+            margin-left: auto;
+            margin-right: auto;}
+    </style>
     <body>
         <h1> How to create a GitHub HTML page.</h1>
-        <p>Pre-requisites</p>
+        <p><b>Pre-requisites</b></p>
         <p> 1. Understanding how to create files using an integrated development environment (IDE) and having an IDE installed on your computer
             <br> 2. Understanding how to navigate your computer's terminal so that you may create, look for, and call functions from your terminal
         </p>
 
-        <p>
-            Step 1 - Creating a GitHub account.
+        <p><b>
+            Step 1 - Creating a GitHub account.</b>
         </p>
        <p> 
         To create a github page you will first need a github account.
@@ -20,14 +30,14 @@
         Go to this link and create your free account by click on the sign up button: 
         <a href="https://github.com/" title="GitHub Page" target="_blank">link</a>
        </p>
-       <p>
-        Step 2 - creating a  repository.
+       <p> <b>
+        Step 2 - Creating a  repository. </b>
        </p>
        <p> 
         Once you have created a github account you will need to create a repository that will house the code needed to create the page. <br>
         In the github website navigate to your main dashboard and click on "repository" the repository is located next to the "overview" page on the top of the github page.
-        Once you are in the repository page you will need to click on "new" this will lead you to the following page below.<br>
-        <img src="git_repo.png" />
+        Once you are in the repository page you will need to click on "new" this will lead you to the following page below.<br><br>
+        <img src="git_repo.png" width="600" height="400" /> <br> <br>
         On this page you will want to name your repository the exact same name as your github account. <br>
         For example if my github account's name was JaneDoe then the repository name should be named JaneDoe as well. <br>
         Ensure that your repository is set to public so that you may access it from a browser later in this tutorial. <br>
@@ -35,8 +45,8 @@
         This is not necessary but it is good practice to have these included when adding a new repository.
        </p>
        
-       <p>
-        Step 3 - Setting up your GitHub repository in your local computer.
+       <p> <b>
+        Step 3 - Setting up your GitHub repository in your local computer. </b>
        </p>
        <p>
         Once you have your repository set up you are going to clone your online repository to your personal computer. This is referred to as your local computer. <br>
@@ -46,19 +56,19 @@
         When installing please install with all the reccommended options that the instaler will prompt you with.
        </p>
        <p>
-        Once installed you must log into your github account by clicking on the account icon located at the bottom left of the Visual Studio Code application. <br>
-        <img src="vs_sign_in.png" />
+        Once installed you must log into your github account by clicking on the account icon located at the bottom left of the Visual Studio Code application. <br><br>
+        <img src="vs_sign_in.png" width="600" height="450"/> <br><br>
         Doing this will allow you to copy repositories created in GitHub and will also allow you to updated these repositories directly from Visual Studio Code.
        </p>
        <p>
         To copy the repository click on "Clone Git Repository.." <br>
-        Now go back to your GitHub account in your browser and click on "code" a module will appear and will allow you to copy the github url to your repository. <br>
-        <img src="git_repo_code.png" /> <br>
+        Now go back to your GitHub account in your browser and click on "code" a module will appear and will allow you to copy the github url to your repository. <br> <br>
+        <img src="git_repo_code.png" width="750" height="400" /> <br> <br>
         Copy the url and insert it in the VS Code interface.
        </p>
 
-       <p>
-        Step 4 - Addiding an HTML file to your repository.
+       <p> <b>
+        Step 4 - Addiding an HTML file to your repository. </b>
        </p>
        <p>
         Now that you have your repository on your local computer the next step is adding an HTML file named "index"
@@ -69,30 +79,30 @@
        </p>
        <p>
         Let us start by creating the index file. Click on the document icon with a plus sign next to it on the VS code interface. <br>
-        Refer to the screenshot below to see where it is located. The file should be named "index.html" <br>
-        <img src="adding_index.png" />
+        Refer to the screenshot below to see where it is located. The file should be named "index.html" <br> <br>
+        <img src="adding_index.png" width="600" height="400"/> <br>
        </p>
 
-       <p>
-        Step 5 - adding the code that will be displayed on your website
+       <p> <b>
+        Step 5 - Adding the code that will be displayed on your website. </b>
        </p>
        <p>
         Now that the index file has been created you will want to copy and paste the following code into the index file. <br> <br>
         &lthtml&gt <br>
          &lth1&gt Hello there! &lt/h1&gt <br>
          &lt/html&gt <br> <br>
-         Save the index file once you have added the code above. Below is how it should look: <br>
-         <img src="index_code.png"/>
+         Save the index file once you have added the code above. Below is how it should look: <br> <br>
+         <img src="index_code.png" width="600" height="400"/> <br>
        </p>
-       <p>
-        Step 6 - Publishing your code 
+       <p> <b>
+        Step 6 - Publishing your code. </b>
        </p>
        <p>
         The final step of the process is to submit your code from your local computer on to GitHub. <br>
         This can be done using VS Code by going to the "source control" page of VS Code. <br>
         From there you will notice that the index file is listed as needing to be commited. <br>
         This just means that the file you have on your local computer is either different or not in the GitHub repository. <br> <br>
-        <img src="vs_commit.png"/> <br>
+        <img src="vs_commit.png" width="600" height="400"/> <br> <br>
         Click on the check mark next to "source control" to commit the index file <br> <br>
         Alternatively, you can use the terminal on your computer to "push" your new files or updated code to the GitHub repository. <br>
         In the example below we will use GitBash as the terminal. The commands listed here to "push" the files to the repository can be used on Mac's terminal as well. 
@@ -102,26 +112,26 @@
         While in the terminal ensure you are in the correct directory where your index file is located. Use the command pwd to see where you are in the terminal. <br>
         If you are not sure what files or folders are located in the directory you are in use command ls to display the folder and files. <br>
         Use command cd &ltfolder&gt to navigate into that folder. <br><br>
-        <img src="terminal_one.png"/> <br>
+        <img src="terminal_one.png"/> <br> <br>
         Once you are in the folder that houses your index file the following sequences of commands will allow you to "push" your newly created file to your GitHub repository. <br>
         First you will add the index file. <br>
         Use command git add &ltfile name&gt to add the file. <br>
         Then you must commit the file. Use git commit &ltfile name&gt -m "short description of your update to your GitHub repo" <br> <br>
         <img src="terminal_commit.png"/> <br>
         *Note that the -m is needed along with a description of what your update is in order to complete this command. If you do not include quotation marks for your description you get the error message I got. <br>
-        Finally you must "push" the changes. This is the equivalent of going live with the changes you have made. Use commmand git push to complete the process. <br>
+        Finally you must "push" the changes. This is the equivalent of going live with the changes you have made. Use commmand git push to complete the process. <br> <br>
         <img src="terminal_push.png"/> <br>
        </p>
 
-       <p>
-        Step 7 - Viewing your GitHub website. 
+       <p> <b>
+        Step 7 - Viewing your GitHub website. </b>
        </p>
        <p>
         Go to your GitHub account and check that the changes you have made on your local computer and then published to your GitHub repository are showing. <br>
         If the file appears on the GitHub repository then you completed all the steps successfuly.<br>
         Open up a new tab on your browser and search for &ltyour GitHub name&gt.github.io <br>
         This will bring you to your published page on the internet with the message "Hello there!" on the screen. <br> <br>
-        <img src="example_page2.png"/> <br> This is how it will look but without a picture, ha! 
+        <img src="example_page2.png" width="750" height="475"/> <br> This is how it will look but without a picture, ha! 
        </p>
        <h2> Congratulations! You have created a GitHub HTML webpage</h2>
     </body>
